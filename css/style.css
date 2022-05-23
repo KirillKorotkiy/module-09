@@ -1,0 +1,257 @@
+*, *::before, 
+    *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+     font-family: "Roboto", sans-serif;
+     color: #666666;
+     font-size: 14px;
+ }
+
+ img {
+    height: auto;
+    display:inline-block;
+    max-width: 100%;
+}
+
+ ul{
+     list-style: none;
+    }
+
+
+.background{
+    min-width: 320px;
+    height: 542px;
+    background-image: url(../img/vector-smart-object-320.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-repeat: no-repeat;
+    }
+    
+.page-header{
+        margin-bottom: 75px;
+    }
+    
+.page-header-link{
+        margin-bottom: 40px;
+    }
+ 
+.sub-page-header a{
+        text-decoration: none;
+        color: white;
+    }
+
+.page-link{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+.page-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-page-header{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.page-link-item a{
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+}
+
+.page-link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 35px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0);
+    border-width: 3px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: border-color 300ms ease;
+}
+
+
+.page-link-item:hover{
+    border-color: rgba(255, 255, 255, 1);
+}
+
+
+.search{
+    font-size: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.search-item{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+.ulpoad-button{
+    width: 230px;
+    height: 40px;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.upload-button-bottom{
+    width: 230px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 25px;
+    color: #ff4e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.main-section{
+    font-size: 22px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.main-section-item{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+
+.sub-main-section-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 4px; 
+    right: 0;
+    bottom: 0;
+}
+
+.sub-main-name{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 22px;
+}
+
+.team-carts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.max-width-carts{
+    max-width: 225px;
+}
+
+.bcg-color-red{
+    background-color: #ff4e50;
+}
+
+.bcg-color-orange{
+    background-color: #ffa507;
+}
+
+.bcg-color-green{
+    background-color: #1cd7ad;
+}
+
+.bcg-color-blue{
+    background-color: #4e73db;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .team-carts:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-700.jpg);
+        background-position: center;
+    }
+
+    .page-link{
+        padding: 0;
+    }
+
+    .header-md{
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 145px;
+        justify-content: space-between;
+    }
+    
+    .search{
+        font-size: 52px;
+        margin-bottom: 45px;
+    }
+
+    .search-item{
+        width: auto;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .page-header-link{margin-bottom: 0;}
+
+
+}
+
+
+@media (min-width:1140px){
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-1140.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 1140px){
+    .team-carts:nth-child(-n+2){
+        margin-bottom: 30px;
+    }
+
+
+}
